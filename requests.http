@@ -2,8 +2,20 @@ POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "Monoqlo City", 
-  "album": "Monoqlo City - Single",
-  "artist": "ACE COLLECTION",
+  "title": "Akeboshi", 
+  "album": "Akeboshi - Single",
+  "artist": "Aimer",
+  "year": 2020
+}
+
+###
+PATCH http://localhost:3000/songs/5
+Content-Type: application/json
+
+{
+  "artist": "LiSA",
   "year": 2021
 }
+
+###
+DELETE http://localhost:3000/songs/1
